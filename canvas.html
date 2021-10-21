@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>주사위 그리기</title></head>
+<body>
+<h3>주사위 그리기</h3>
+<hr>
+<canvas id="myCanvas" style="background-color:aliceblue" width="500" height="500"></canvas>
+<script>
+	var canvas = document.getElementById("myCanvas");
+	var context = canvas.getContext("2d");
+	
+	context.beginPath(); // 빈 경로 구성
+	for(var i=0; i<3; i++) {
+		context.rect(10+i*100,10+i*0, 60,60);
+	}
+    for(var i=0; i<3; i++) {
+		context.rect(10+i*100,100+i*0, 60,60);
+	}
+	context.strokeStyle="black"; // 선의 색
+	context.stroke(); // 사각형을 캔버스에 그린다
+
+    context.beginPath();
+    context.arc(40, 40, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill(); //주사위 1
+
+    context.beginPath();
+    context.arc(120, 20, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(160, 60, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill(); // 주사위 2
+
+    context.beginPath();
+    context.arc(220, 20, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(240, 40, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(260, 60, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill(); //주사위 3
+
+    context.beginPath();
+    context.arc(20,110, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(20, 150, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(60,110, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(60, 150, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill(); // 주사위 4
+
+    context.beginPath();
+    context.arc(120,110, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(120, 150, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(160,110, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(160, 150, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(140, 130, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill(); // 주사위 5
+
+    context.beginPath();
+    context.arc(220,110, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(220, 150, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(220, 130, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(260,110, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(260,130, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill();
+
+    context.beginPath();
+    context.arc(260, 150, 5, 0, 2*Math.PI);
+    context.stroke();
+    context.fillStyle = 'black'; context.fill(); // 주사위 6
+
+
+</script>	 
+</body>
+</html>
